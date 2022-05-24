@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Assessment 1 COIT20268">
+    <meta name="author" content="Romina Ingallina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <figure class="header__img">
+            <img src="../assets/img/logo.png" alt="">
+        </figure>
+        <nav class="header__navigation">
+            <ul class="menu">
+                <li class="menu__option"><a href="../index.html"> Home </a></li>
+                <li class="menu__option"><a href="./form.html"> Subscribe </a></li>
+                <li class="menu__option"> <a href="./businessHours.html"> Business Hours </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="product__detail">
+        
+        <!--time table with business hours-->
+        <section class="product__products" id="productList">
+            <h1> To subscribe to our newsletter, please enter your contact details: </h1>
+            
+            <form action="" class="form" id="form">
+                <label for="name">
+                    Name:    
+                </label>
+                <input class="form__input" type="text" name="name" id="name" placeholder="Charlie Brown">
+                <label for="age">
+                    Age:    
+                </label>
+                <input class="form__input" type="number" name="age" id="age" placeholder="69">
+                <label for="email">
+                    Email:
+                </label>
+                <input class="form__input" type="email" name="email" id="email" placeholder="charliebrown@peanuts.com">
+                <label for="gender">
+                    Gender:
+                </label>
+                <select class="form__input" name="gender" id="gender">
+                    <option value="default"> Select an option ... </option>
+                    <option value="woman"> Woman </option>
+                    <option value="man"> Man </option>
+                    <option value="other"> Other </option>
+                </select>
+                <label for="country"> 
+                    Country of Origin:  
+                </label>
+                <input class="form__input" type="text" name="country" id="country" placeholder="Australia">
+                <label for="personalInterest">
+                     Personal Interest:  
+                </label>
+                <input class="form__input" type="text" name="personalInterest" id="personalInterest" placeholder="Play Lego">
+                <label for="comments"> Comments</label>
+                <textarea class="form__input" name="comments" id="comments" cols="30" rows="10" placeholder="leave some comments here ..."></textarea>
+                <button class="primary-button" id="btn" type="submit"> Subscribe </button>
+
+            </form>
+        </section>
+        
+    </main>
+    <div id="showinfo">
+            <h4>Thank you for subscribing. We will use the following details you provided us:  </h4>
+    </div>
+    <footer>
+        <div>
+            <figure class="footer__img">
+                <img src="../assets/img/logo.png" alt="">
+            </figure>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation__options">
+                    <li class="menu__option"><a href="./index.html"> Home </a></li>
+                    <li class="menu__option"><a href="./views/form.html"> Subscribe </a></li>
+                    <li class="menu__option"> <a href="./views/businessHours.html"> Business Hours </a></li>
+                </ul>
+            </nav>   
+        </div>
+        <div>
+            <p>&copy; Copyright 2021 Romina Ingallina </p>
+        </div>
+            
+    </footer>
+
+    <script src="../worldToys.js"></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Romina Ingallina">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Of Toys</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Header page-->
+    <header class="header">
+        <figure class="header__img">
+            <img src="./assets/img/logo.png" alt="">
+        </figure>
+        <nav class="header__navigation">
+            <ul class="menu">
+                <li class="menu__option"><a href="./index.html"> Home </a></li>
+                <li class="menu__option"><a href="./views/form.html"> Subscribe </a></li>
+                <li class="menu__option"> <a href="./views/businessHours.html"> Business Hours </a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Image map to choose categories-->
+    <main id="home_page">
+        <figure class="main__img">
+            <img src=".//assets/img/floor_plan.png" alt="Categories World Of Toys" usemap="#workmap">
+            <figcaption>Welcome to World Of Toys </figcaption>
+
+            <map name="workmap">
+                <area class="menu__image" shape="circle" coords="100,120,35" alt="Board Games" href="#category_page" id="boardGames" onclick="showCategories(boardGames)">
+                <area class="menu__image" shape="circle" coords="250,270,35" alt="Rc Toys" href="#" id="rcToys" onclick="showCategories(rcToys)">
+                <area class="menu__image" shape="circle" coords="200,200,35" alt="Playing Cards" href="#" id="playingCards" onclick="showCategories(playingCards)">
+                <area class="menu__image" shape="circle" coords="350,115,35" alt="Lego Models" href="#" id="legoModels" onclick="showCategories(legoModels)">
+              </map>
+        </figure>
+    </main>
+    <!--Section to display all products for category-->
+    <main id="category_page">
+        <h1 id="title_page"></h1>
+        <section class="products" id="productList">
+            
+        </section>
+    </main>
+
+    <!--footer page with nav-->
+    <footer>
+        <div>
+            <figure class="footer__img">
+                <img src="./assets/img/logo.png" alt="">
+            </figure>
+            <nav class="footer__navigation">
+                <ul class="footer__navigation__options">
+                    <li class="menu__option"><a href="./index.html"> Home </a></li>
+                    <li class="menu__option"><a href="./views/form.html"> Subscribe </a></li>
+                    <li class="menu__option"> <a href="./views/businessHours.html"> Business Hours </a></li>
+                </ul>
+            </nav>   
+        </div>
+        <div>
+            <p>&copy; Copyright 2021 Romina Ingallina </p>
+        </div>
+            
+    </footer>
+
+    <script src="./worldToys.js"></script>
+</body>
+</html>
